@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="css/styles.css" />
 
   </head>
 
@@ -366,7 +366,7 @@
             </div>
 
             <div class="contact-form-container">
-              <form id="contactForm" class="contact-form" method="post" action="{% url 'contact' %}">
+              <form id="contactForm" class="contact-form" method="post" action="contact.html">
                 {% csrf_token %}
                 <div class="form-group">
                   <label for="name" class="form-label">Name</label>
